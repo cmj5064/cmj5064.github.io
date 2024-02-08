@@ -56,10 +56,5 @@ _zip
 # build
 Gemfile.lock
 
-# assets
-*.png
-*.jpg
-*.gif
-
 # backup
 backup/*
