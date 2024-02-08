@@ -52,3 +52,13 @@ _zip
 
 /assets/js/*hydejack-*
 /_sass/*/__*__/*
+
+# build
+Gemfile.lock
+
+# assets
+*.png
+*.jpg
+
+# backup
+backup/*
