@@ -59,6 +59,7 @@ Gemfile.lock
 # assets
 *.png
 *.jpg
+*.gif
 
 # backup
 backup/*
