@@ -4,7 +4,7 @@
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 # url:                   https://username.github.io
-# url:                   https://cmj5064.github.io
+url:                   https://cmj5064.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -91,27 +91,11 @@ permalink:             /:categories/:title/
 paginate:              3
 paginate_path:         /:num/
 
-# Collections
-# ----------------------------------------------------------------------------------------
-
-collections:
-  featured_categories:
-    permalink: /:name/
-    output: true
-
-  featured_tags:
-    permalink: /tag-:name/
-    output: true
-
-  projects:
-    permalink: /projects/:path/
-    output: true
-
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9.1.6
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9.1.6 # TODO remote push 전에 주석 변경하기!
 
 
 # Customizaton
@@ -172,11 +156,11 @@ defaults:
       layout:          plain
       sitemap:         false
 
-  # # You can use the following to enable comments on all posts.
-  # - scope:
-  #     type:            posts
-  #   values:
-  #     comments:        true
+  # You can use the following to enable comments on all posts.
+  - scope:
+      type:            posts
+    values:
+      comments:        true
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
@@ -224,7 +208,7 @@ kramdown:
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [about, newsletter, related, random, comments]
+  post_addons:         [applause, comments]
 
   # Configure the order of complementary content on project pages
   project_addons:      [about, newsletter, other, comments]
@@ -326,18 +310,18 @@ hydejack:
 # # Collections
 # # ----------------------------------------------------------------------------------------
 
-# collections:
-#   featured_categories:
-#     permalink:         /:name/
-#     output:            true
+collections:
+  featured_categories:
+    permalink:         /:name/
+    output:            true
 
-#   featured_tags:
-#     permalink:         /tag-:name/
-#     output:            true
+  featured_tags:
+    permalink:         /tag-:name/
+    output:            true
 
-#   projects:
-#     permalink:         /projects/:path/
-#     output:            true
+  projects:
+    permalink:         /projects/:path/
+    output:            true
 
 
 # File inclusion/exclusion
